@@ -1,0 +1,43 @@
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 16px;
+}
+
+.posts-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "p1 p2 p3"
+        "p1 p4 p4";
+    gap: 14px 15px;
+}
+
+.posts-item:first-child {
+    grid-area: p1;
+
+}
+
+.posts-item:last-child {
+    grid-area: p4;
+}
+
+.header-navigation-list {
+    display: grid;
+    grid-template-columns: repeat(9, auto-fit);
+}
