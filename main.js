@@ -21,7 +21,7 @@ async function updateWeather() {
         const { latitude, longitude } = position.coords;
 
         // Використання OpenWeatherMap API
-        const apiKey = '940c1cc91d19d593d5546e088c9abc08'; // Вставте свій ключ API
+        const apiKey = '940c1cc91d19d593d5546e088c9abc08';
         const weatherResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`);
         const weatherData = await weatherResponse.json();
 
@@ -43,8 +43,12 @@ async function updateWeather() {
 updateDate();
 updateWeather();
 
+const headerLink = document.querySelector('.header-navigation-link');
 
-// document.querySelector('#app').innerHTML = `
+headerLink.addEventListener('click', onClickHeaderLink);
 
-// `
+const onClickHeaderLink = () => {
+    return headerLink.classList.add('.is-active');
+};
+
 
