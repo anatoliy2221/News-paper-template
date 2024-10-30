@@ -1,0 +1,525 @@
+@font-face {
+  font-family: Sofia Pro;
+  src: url("../fonts/Sofia Pro-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Sofia Pro;
+  src: url("../fonts/Sofia Pro-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Sofia Pro;
+  src: url("../fonts/Sofia Pro-SemiBold.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Sofia Pro;
+  src: url("../fonts/Sofia Pro-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Oswald;
+  src: url("/News-paper-template/assets/Oswald-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Oswald;
+  src: url("/News-paper-template/assets/Oswald-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Oswald;
+  src: url("/News-paper-template/assets/Oswald-SemiBold.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Oswald;
+  src: url("/News-paper-template/assets/Oswald-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Lora;
+  src: url("/News-paper-template/assets/Lora-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Lora;
+  src: url("../fonts/Lora-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Lora;
+  src: url("../fonts/Lora-SemiBold.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Lora;
+  src: url("../fonts/Lora-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("/News-paper-template/assets/Poppins-SemiBold.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/***
+    The new CSS reset - version 1.11.2 (last updated 15.11.2023)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+    - The "html" element is excluded, otherwise a bug in Chrome breaks the CSS hyphens property (https://github.com/elad2412/the-new-css-reset/issues/36)
+ */
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Fix mobile Safari increase font-size on landscape mode */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a,
+button {
+  cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul,
+menu,
+summary {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input,
+textarea {
+  -webkit-user-select: auto;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+  -webkit-appearance: revert;
+  -moz-appearance: revert;
+       appearance: revert;
+}
+
+/* preformatted text - use only for this feature */
+:where(pre) {
+  all: revert;
+  box-sizing: border-box;
+}
+
+/* reset default text opacity of input placeholder */
+::-moz-placeholder {
+  color: unset;
+}
+::placeholder {
+  color: unset;
+}
+
+/* fix the feature of 'hidden' attribute.
+ display:revert; revert to element instead of attribute */
+:where([hidden]) {
+  display: none;
+}
+
+/* revert for bug in Chromium browsers
+ - fix for the content editable attribute will work properly.
+ - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+:where([contenteditable]:not([contenteditable=false])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable=true]) {
+  -webkit-user-drag: element;
+}
+
+/* Revert Modal native behavior */
+:where(dialog:modal) {
+  all: revert;
+  box-sizing: border-box;
+}
+
+/* Remove details summary webkit styles */
+::-webkit-details-marker {
+  display: none;
+}
+
+body {
+  font-family: "Sofia Pro", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.info-bar {
+  box-shadow: 0 1px 10px 0 rgba(246, 80, 80, 0.15);
+  background: #fff;
+  margin-bottom: 26px;
+}
+
+.info-bar-link {
+  display: block;
+  align-content: center;
+  padding: 15px 7px;
+  width: 96px;
+  height: 100%;
+}
+
+.info-bar-container {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  justify-content: space-between;
+}
+.info-bar-container a {
+  background-color: #f65050;
+  color: #fff;
+}
+
+.header-logo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.logo {
+  width: 247px;
+}
+
+.header-soc {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 24px);
+}
+
+.header-soc-item {
+  width: 24px;
+  height: 24px;
+}
+
+.header-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: #1b7bfd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-soc-item:nth-child(1) .header-soc-link {
+  background-color: #1b7bfd;
+}
+
+.header-soc-item:nth-child(2) .header-soc-link {
+  background-color: #42c0f5;
+}
+
+.header-soc-item:nth-child(3) .header-soc-link {
+  background-color: #c23785;
+}
+
+.header-soc-item:nth-child(4) .header-soc-link {
+  background-color: #ef5043;
+}
+
+.header-soc-icon {
+  margin: 4px;
+  fill: #ffffff;
+}
+
+.nav-bar {
+  padding-right: 32px;
+  margin-bottom: 25px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+  background: #393939;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 15px;
+  height: 100%;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+}
+
+.is-active {
+  background-color: #f65050;
+}
+
+.nav-item a.is-active::after {
+  content: "";
+  position: absolute;
+  left: 35%;
+  bottom: 15%;
+  width: 25px;
+  height: 0px;
+  border-radius: 2px;
+  border: 1px solid #fff;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  font-weight: 300;
+  font-size: 10px;
+  color: rgba(231, 222, 222, 0.3);
+}
+
+.search-input::before {
+  content: "";
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.search-icon {
+  fill: rgba(231, 222, 222, 0.3);
+}
+
+.hero-container {
+  margin-bottom: 50px;
+}
+
+.hero-item {
+  position: relative;
+}
+
+.hero-list {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-areas: "p1 p2 p3" "p1 p4 p4";
+  gap: 14px 15px;
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 36px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.hero-item:first-child {
+  grid-area: p1;
+}
+
+.hero-item:nth-child(2) {
+  grid-area: p2;
+}
+
+.hero-item:nth-child(3) {
+  grid-area: p3;
+}
+
+.hero-item:last-child {
+  grid-area: p4;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+}
+
+.overlay > p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 101%;
+  color: #fff;
+}
+
+.dont-miss {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.dont-miss-post-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #393939;
+}
+
+.dont-miss-articles-list {
+  display: grid;
+  gap: 29px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.dont-miss-articles-item:first-child {
+  grid-column: 1/2;
+  grid-row: 1/6;
+}
+
+.dont-miss-articles-item {
+  display: grid;
+  gap: 19px;
+  grid-template-columns: 90px 1fr;
+}
+
+.dont-miss-nav-list {
+  display: flex;
+  gap: 12px;
+}
+
+.dont-miss-title {
+  font-weight: 500;
+  font-size: 24px;
+  color: #f65050;
+}
+
+.dont-miss-sidebar-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #393939;
+}
+
+.dont-miss-sidebar-posts {
+  display: grid;
+  row-gap: 17px;
+}
+
+.dont-miss-sidebar-posts-item {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 70px 1fr;
+}
+
+.page-title {
+  background-image: url("./img/banner.jpg");
+  width: 771px;
+  margin-bottom: 25px;
+  padding: 16px 28px 12px 26px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 219px 180px;
+  justify-content: space-between;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 151%;
+  color: #fff;
+}
+
+.title-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 151%;
+  color: #f65050;
+}
+
+.title-link {
+  width: 180px;
+  height: 44px;
+  background-color: #f65050;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  align-content: center;
+}
+
+.is-active {
+  background-color: #f65050;
+}
