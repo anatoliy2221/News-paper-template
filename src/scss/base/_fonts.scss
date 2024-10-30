@@ -1,0 +1,13 @@
+@use "../utils/variables" as var;
+
+@each $font-key, $font-family in var.$font-families {
+  @each $weight-key, $weight-value in var.$font-weights {
+    @font-face {
+      font-family: #{$font-family};
+      src: url("../fonts/#{$font-family}-#{$weight-key}.ttf") format("ttf");
+      font-weight: $weight-value;
+      font-style: normal;
+      font-display: swap;
+    }
+  }
+}

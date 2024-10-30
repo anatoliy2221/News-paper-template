@@ -9,190 +9,290 @@
 </head>
 
 <body>
+  <div class="info-bar">
+    <div class="info-bar-container container">
+      <svg class="weather-icon" width="16" height="16">
+        <use href="/img/icons.svg#icon-sun"></use>
+      </svg>
+      <span id="weather">Loading weather...</span>
+      <span id="location">Loading...</span>
+      <svg class="weather-date" width="16" height="16">
+        <use href="./img/icons.svg#icon-clock"></use>
+      </svg>
+      <span id="date"></span>
+      <a class="info-bar-link">Breaking News</a>
+      <p>Indonesia says located black box recorders from crashed plane</p>
+      <ul class="header-soc">
+        <li class="header-soc-item">
+          <a href="" class="header-soc-link" target="_blank">
+            <svg class="header-soc-icon" width="24" height="24">
+              <use href="./img/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-soc-item">
+          <a href="" class="header-soc-link" target="_blank">
+            <svg class="header-soc-icon" width="24" height="24">
+              <use href="./img/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-soc-item">
+          <a href="" class="header-soc-link" target="_blank">
+            <svg class="header-soc-icon" width="24" height="24">
+              <use href="./img/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-soc-item">
+          <a href="" class="header-soc-link" target="_blank">
+            <svg class="header-soc-icon" width="24" height="24">
+              <use href="./img/icons.svg#icon-youtoube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <header class="header">
     <div class="container header-container">
-      <div class="top-info-bar">
-        <span id="location">Loading...</span> |
-        <span id="weather">Loading weather...</span> |
-        <span id="date"></span>
-      </div>
-
-      <div class="header-info-bar"></div>
       <div class="header-logo">
-        <a href="/" class="logo"><img src="./img/Logo.png" alt="" /></a>
-        <div class="site-title">
+        <a href="/" class="logo">
+          <img src="./img/Logo.png" alt="logo newacast" />
+        </a>
+        <div class="page-title">
           <div class="site-title-wrapper">
             <h1 class="title">
-              Best Selling <span>BLOG</span> and <span>MAGAZINE</span> Theme of
-              All Time
+              Best Selling <span>BLOG</span> and <span>MAGAZINE</span> Theme
+              of All Time
             </h1>
             <p class="title-text">Experience the change!</p>
           </div>
           <a href="#" class="title-link">PURCHASE NOW</a>
         </div>
       </div>
-      <nav class="header-navigation">
-        <ul class="header-navigation-list">
-          <li class="header-navigation-item"><a href="#" class="header-navigation-link">Home</a></li>
-          <li class="header-navigation-item">
-            <a href="#" class="header-navigation-link">International</a>
+      <nav class="nav-bar">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
           </li>
-          <li class="header-navigation-item"><a href="#" class="header-navigation-link">Sports</a></li>
-          <li class="header-navigation-item"><a href="#" class="header-navigation-link">Opinion</a></li>
-          <li class="header-navigation-item"><a href="#" class="header-navigation-link">Business</a></li>
-          <li class="header-navigation-item"><a href="#" class="header-navigation-link">Youth</a></li>
-          <li class="header-navigation-item">
-            <a href="#" class="header-navigation-link">Entertainment</a>
+          <li class="nav-item">
+            <a href="#" class="nav-link">International</a>
           </li>
-          <li class="header-navigation-item"><a href="#" class="header-navigation-link">Lifestyle</a></li>
-          <li class="header-navigation-item"><a href="#" class="header-navigation-link">Pages</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Sports</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Opinion</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Business</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Youth</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Entertainment</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Lifestyle</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Pages</a>
+          </li>
         </ul>
+
+        <div class="search-bar">
+          <input class="search-input" type="search" name="user_search" placeholder="Search for"
+            aria-label="Search for any term" />
+          <svg class="search-icon" width="12" height="12">
+            <use href="./img/icons.svg#icon-search"></use>
+          </svg>
+        </div>
       </nav>
     </div>
   </header>
   <main class="main">
     <div class="container">
-      <div class="posts-container container">
-        <ul class="posts-list">
-          <li class="posts-item">
+      <div class="hero-container">
+        <ul class="hero-list">
+          <li class="hero-item">
             <img src="./img/post-1.jpg" alt="" />
-            <p>Craig Bator - 27 Dec 2020</p>
-            <h2>After all is said and done, more is done</h2>
+            <div class="overlay">
+              <p>Craig Bator - 27 Dec 2020</p>
+              <h2 class="hero-title">
+                After all is said and done, more is done
+              </h2>
+            </div>
           </li>
-          <li class="posts-item">
+          <li class="hero-item">
             <img src="./img/post-2.jpg" alt="" />
-            <p>Craig Bator - 27 Dec 2020</p>
-            <h2>They’re back! Kennedy Darling named to return to</h2>
+            <div class="overlay">
+              <p>Craig Bator - 27 Dec 2020</p>
+              <h2>They’re back! Kennedy Darling named to return to</h2>
+            </div>
           </li>
-          <li class="posts-item">
+          <li class="hero-item">
             <img src="./img/post-3.jpg" alt="" />
-            <p>Craig Bator - 27 Dec 2020</p>
-            <h2>Swiss authorities say Uber drivers should</h2>
+            <div class="overlay">
+              <p>Craig Bator - 27 Dec 2020</p>
+              <h2>Swiss authorities say Uber drivers should</h2>
+            </div>
           </li>
-          <li class="posts-item">
+          <li class="hero-item">
             <img src="./img/post-4.jpg" alt="" />
-            <p>Craig Bator - 27 Dec 2020</p>
-            <h2>Tourism in Dubai is booming by international tourist</h2>
+            <div class="overlay">
+              <p>Craig Bator - 27 Dec 2020</p>
+              <h2>Tourism in Dubai is booming by international tourist</h2>
+            </div>
           </li>
         </ul>
       </div>
       <section class="dont-miss">
-        <div class="dont-miss-header">
-          <h2 class="dont-miss-title">Don’t Miss</h2>
-          <ul class="dont-miss-nav-list">
-            <li class="dont-miss-nav-item">
-              <a href="" class="dont-miss-nav-btn">All</a>
-            </li>
-            <li class="dont-miss-nav-item">
-              <a href="" class="dont-miss-nav-btn">Lifestyle</a>
-            </li>
-            <li class="dont-miss-nav-item">
-              <a href="" class="dont-miss-nav-btn">Vogue</a>
-            </li>
-            <li class="dont-miss-nav-item">
-              <a href="" class="dont-miss-nav-btn">Health & Fitness</a>
-            </li>
-            <li class="dont-miss-nav-item">
-              <a href="" class="dont-miss-nav-btn">Travel</a>
-            </li>
-            <li class="dont-miss-nav-item">
-              <a href="" class="dont-miss-nav-btn">Gadgets</a>
-            </li>
-            <li class="dont-miss-nav-item">
-              <a href="" class="dont-miss-nav-btn">World</a>
-            </li>
-            <li class="dont-miss-nav-item">
-              <a href="" class="dont-miss-nav-btn">More</a>
-            </li>
-          </ul>
-        </div>
         <div class="dont-miss-post">
-          <div>
-            <img src="./img/dont-miss-1.jpg" alt="" />
-            <p>Craig Bator - 27 Dec 2020</p>
-            <h2>
-              Now Is the Time to Think About Your Small Business Success
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Faucibus lobortis augue condimentum maecenas. Metus at in fames
-              vitae posuere ut vel vulputate....
-            </p>
+          <div class="dont-miss-post-header">
+            <h2 class="dont-miss-title">Don’t Miss</h2>
+            <ul class="dont-miss-nav-list">
+              <li class="dont-miss-nav-item">
+                <a href="" class="dont-miss-nav-link">All</a>
+              </li>
+              <li class="dont-miss-nav-item">
+                <a href="" class="dont-miss-nav-link">Lifestyle</a>
+              </li>
+              <li class="dont-miss-nav-item">
+                <a href="" class="dont-miss-nav-link">Vogue</a>
+              </li>
+              <li class="dont-miss-nav-item">
+                <a href="" class="dont-miss-nav-link">Health & Fitness</a>
+              </li>
+              <li class="dont-miss-nav-item">
+                <a href="" class="dont-miss-nav-link">Travel</a>
+              </li>
+              <li class="dont-miss-nav-item">
+                <a href="" class="dont-miss-nav-link">Gadgets</a>
+              </li>
+              <li class="dont-miss-nav-item">
+                <a href="" class="dont-miss-nav-link">World</a>
+              </li>
+              <li class="dont-miss-nav-item">
+                <a href="" class="dont-miss-nav-link">More</a>
+              </li>
+            </ul>
           </div>
           <ul class="dont-miss-articles-list">
             <li class="dont-miss-articles-item">
-              <img src="./img/dont-miss-2.jpg" alt="" />
+              <img src="./img/dont-miss-1.jpg" alt="" />
               <p>Craig Bator - 27 Dec 2020</p>
               <h2>
-                Penn’s expanding political climate gears up fo 2020 election
+                Now Is the Time to Think About Your Small Business Success
               </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Faucibus lobortis augue condimentum maecenas. Metus at in fames
+                vitae posuere ut vel vulputate....
+              </p>
+
             </li>
             <li class="dont-miss-articles-item">
-              <img src="./img/dont-miss-3.jpg" alt="" />
-              <p>Craig Bator - 27 Dec 2020</p>
-              <h2>Things to Look For in a Financial Trading Platform</h2>
+              <img src="./img/dont-miss-2.jpg" class="section-img" alt="" />
+              <div class="wrapper">
+                <p>Craig Bator - 27 Dec 2020</p>
+                <h2>
+                  Penn’s expanding political climate gears up fo 2020 election
+                </h2>
+              </div>
             </li>
             <li class="dont-miss-articles-item">
-              <img src="./img/dont-miss-4.jpg" alt="" />
-              <p>Craig Bator - 27 Dec 2020</p>
-              <h2>The only thing that overcomes hard luck is hard work</h2>
+              <img src="./img/dont-miss-3.jpg" class="section-img" alt="" />
+              <div class="wrapper">
+                <p>Craig Bator - 27 Dec 2020</p>
+                <h2>Things to Look For in a Financial Trading Platform</h2>
+              </div>
             </li>
             <li class="dont-miss-articles-item">
-              <img src="./img/dont-miss-5.jpg" alt="" />
-              <p>Craig Bator - 27 Dec 2020</p>
-              <h2>Success is not a good teacher failure makes you humble</h2>
+              <img src="./img/dont-miss-4.jpg" class="section-img" alt="" />
+              <div class="wrapper">
+                <p>Craig Bator - 27 Dec 2020</p>
+                <h2>The only thing that overcomes hard luck is hard work</h2>
+              </div>
             </li>
             <li class="dont-miss-articles-item">
-              <img src="./img/dont-miss-6.jpg" alt="" />
-              <p>Craig Bator - 27 Dec 2020</p>
-              <h2>At Value-Focused Hotels, the Free Breakfast Gets Bigger</h2>
+              <img src="./img/dont-miss-5.jpg" class="section-img" alt="" />
+              <div class="wrapper">
+                <p>Craig Bator - 27 Dec 2020</p>
+                <h2>
+                  Success is not a good teacher failure makes you humble
+                </h2>
+              </div>
+            </li>
+            <li class="dont-miss-articles-item">
+              <img src="./img/dont-miss-6.jpg" class="section-img" alt="" />
+              <div class="wrapper">
+                <p>Craig Bator - 27 Dec 2020</p>
+                <h2>
+                  At Value-Focused Hotels, the Free Breakfast Gets Bigger
+                </h2>
+              </div>
             </li>
           </ul>
-          <aside class="dont-miss-sidebar">
-            <ul class="dont-miss-sidebar-menu">
-              <li class="dont-miss-sidebar-menu-item">
-                <a href="">Recent</a>
-              </li>
-              <li class="dont-miss-sidebar-menu-item">
-                <a href=""></a>Trending
-              </li>
-              <li class="dont-miss-sidebar-menu-item">
-                <a href=""></a>Most Views
-              </li>
-            </ul>
-            <ul class="dont-miss-sidebar-posts">
-              <li class="dont-miss-sidebar-posts-item">
-                <img src="./img/dont-miss-7.jpg" alt="" />
+        </div>
+        <aside class="dont-miss-sidebar">
+          <ul class="dont-miss-sidebar-menu">
+            <li class="dont-miss-sidebar-menu-item">
+              <a href="">Recent</a>
+            </li>
+            <li class="dont-miss-sidebar-menu-item">
+              <a href=""></a>Trending
+            </li>
+            <li class="dont-miss-sidebar-menu-item">
+              <a href=""></a>Most Views
+            </li>
+          </ul>
+          <ul class="dont-miss-sidebar-posts">
+            <li class="dont-miss-sidebar-posts-item">
+              <img src="./img/dont-miss-7.jpg" class="section-img" alt="" />
+              <div class="wrapper">
                 <p>Craig Bator - 27 Dec 2020</p>
                 <h2>Gluten-Free Almond Cake with Berries</h2>
-              </li>
-              <li class="dont-miss-sidebar-posts-item">
-                <img src="./img/dont-miss-8.jpg" alt="" />
+              </div>
+            </li>
+            <li class="dont-miss-sidebar-posts-item">
+              <img src="./img/dont-miss-8.jpg" class="section-img" alt="" />
+              <div class="wrapper">
                 <p>Craig Bator - 27 Dec 2020</p>
                 <h2>Enjoy My Favourite Molten Chocolate Cake</h2>
-              </li>
-              <li class="dont-miss-sidebar-posts-item">
-                <img src="./img/dont-miss-9.jpg" alt="" />
+              </div>
+            </li>
+            <li class="dont-miss-sidebar-posts-item">
+              <img src="./img/dont-miss-9.jpg" class="section-img" alt="" />
+              <div class="wrapper">
                 <p>Craig Bator - 27 Dec 2020</p>
                 <h2>They back return to you Kennedy Darlings</h2>
-              </li>
-              <li class="dont-miss-sidebar-posts-item">
-                <img src="./img/dont-miss-10.jpg" alt="" />
+              </div>
+            </li>
+            <li class="dont-miss-sidebar-posts-item">
+              <img src="./img/dont-miss-10.jpg" class="section-img" alt="" />
+              <div class="wrapper">
                 <p>Craig Bator - 27 Dec 2020</p>
                 <h2>The art of racing with speed Motor GP</h2>
-              </li>
-              <li class="dont-miss-sidebar-posts-item">
-                <img src="./img/dont-miss-11.jpg" alt="" />
+              </div>
+            </li>
+            <li class="dont-miss-sidebar-posts-item">
+              <img src="./img/dont-miss-11.jpg" class="section-img" alt="" />
+              <div class="wrapper">
                 <p>Craig Bator - 27 Dec 2020</p>
                 <h2>Home team takes the win – NBA 2020</h2>
-              </li>
-            </ul>
-          </aside>
-        </div>
-      </section>
+              </div>
+            </li>
+          </ul>
+        </aside>
+    </div>
+
+    </section>
     </div>
   </main>
-  <script type="module" src="/main.js"></script>
+  <script type="module" src="/src/js/main.js"></script>
 </body>
 
 </html>

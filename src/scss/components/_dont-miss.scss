@@ -1,0 +1,58 @@
+.dont-miss {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 30px;
+}
+
+.dont-miss-post-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #393939;
+}
+
+.dont-miss-articles-list {
+  display: grid;
+  gap: 29px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.dont-miss-articles-item:first-child {
+  grid-column: 1 / 2;
+  grid-row: 1 / 6;
+}
+
+.dont-miss-articles-item {
+  display: grid;
+  gap: 19px;
+  grid-template-columns: 90px 1fr;
+}
+
+.dont-miss-nav-list {
+  display: flex;
+  gap: 12px;
+}
+
+.dont-miss-title {
+  font-weight: 500;
+  font-size: 24px;
+  color: #f65050;
+}
+
+.dont-miss-sidebar-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #393939;
+}
+
+.dont-miss-sidebar-posts {
+  display: grid;
+  row-gap: 17px;
+}
+
+.dont-miss-sidebar-posts-item {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 70px 1fr;
+}

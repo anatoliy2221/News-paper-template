@@ -1,4 +1,4 @@
-import './style.css'
+import '../scss/main.scss'
 // Отримання поточної дати
 function updateDate() {
     const dateElement = document.getElementById("date");
@@ -43,12 +43,23 @@ async function updateWeather() {
 updateDate();
 updateWeather();
 
-const headerLink = document.querySelector('.header-navigation-link');
+const linkEl = document.querySelector(".nav-list");
 
-headerLink.addEventListener('click', onClickHeaderLink);
+console.log(linkEl);
 
-const onClickHeaderLink = () => {
-    return headerLink.classList.add('.is-active');
-};
+linkEl.addEventListener("click", function (event) {
+    const selectedLink = event.target;
+    selectedLink.classList.toggle("is-active");
+});
+
+// const onLinkElClick = (e) => {
+//     const selectedLink = e.currentTarget;
+//     console.log(selectedLink);
+
+
+//     selectedLink.classList.toggle("is-active");
+// }
+
+// linkEl.addEventListener("click", onLinkElClick);
 
 

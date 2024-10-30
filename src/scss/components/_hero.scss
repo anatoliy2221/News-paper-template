@@ -1,0 +1,52 @@
+.hero-container {
+  margin-bottom: 50px;
+}
+
+.hero-item {
+  position: relative;
+}
+
+.hero-list {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-areas:
+    "p1 p2 p3"
+    "p1 p4 p4";
+  gap: 14px 15px;
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 36px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.hero-item:first-child {
+  grid-area: p1;
+}
+
+.hero-item:nth-child(2) {
+  grid-area: p2;
+}
+
+.hero-item:nth-child(3) {
+  grid-area: p3;
+}
+
+.hero-item:last-child {
+  grid-area: p4;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+}
+
+.overlay > p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 101%;
+  color: #fff;
+}

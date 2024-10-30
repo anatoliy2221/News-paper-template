@@ -1,0 +1,146 @@
+@use "sass:map";
+@use "../utils/variables" as v;
+@use "../base/fonts";
+
+.info-bar {
+  box-shadow: 0 1px 10px 0 rgba(246, 80, 80, 0.15);
+  background: #fff;
+  margin-bottom: 26px;
+}
+
+.info-bar-link {
+  display: block;
+  align-content: center;
+  padding: 15px 7px;
+  width: 96px;
+  height: 100%;
+}
+
+.info-bar-container {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  font-size: map.get(v.$font-sizes, "sm");
+  font-weight: map.get(v.$font-weights, "Regular");
+  justify-content: space-between;
+  a {
+    background-color: #f65050;
+    color: #fff;
+  }
+}
+
+.header-logo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.logo {
+  width: 247px;
+}
+
+.header-soc {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 24px);
+}
+
+.header-soc-item {
+  width: 24px;
+  height: 24px;
+}
+
+.header-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: #1b7bfd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-soc-item:nth-child(1) .header-soc-link {
+  background-color: #1b7bfd;
+}
+
+.header-soc-item:nth-child(2) .header-soc-link {
+  background-color: #42c0f5;
+}
+
+.header-soc-item:nth-child(3) .header-soc-link {
+  background-color: #c23785;
+}
+
+.header-soc-item:nth-child(4) .header-soc-link {
+  background-color: #ef5043;
+}
+
+.header-soc-icon {
+  margin: 4px;
+  fill: #ffffff;
+}
+
+.nav-bar {
+  padding-right: 32px;
+  margin-bottom: 25px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+  background: #393939;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 15px;
+  height: 100%;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+}
+
+.is-active {
+  background-color: #f65050;
+}
+
+.nav-item a.is-active::after {
+  content: "";
+  position: absolute;
+  left: 35%;
+  bottom: 15%;
+  width: 25px;
+  height: 0px;
+  border-radius: 2px;
+  border: 1px solid #fff;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  font-weight: 300;
+  font-size: 10px;
+  color: rgba(231, 222, 222, 0.3);
+}
+
+.search-input::before {
+  content: "";
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.search-icon {
+  fill: rgba(231, 222, 222, 0.3);
+  // background-color: rgba(255, 255, 255, 0.3);
+  // color: white;
+  // fill-opacity: 0.3;
+}

@@ -1,0 +1,15 @@
+@use "sass:map";
+@use "../utils/variables" as var;
+@use "../base/fonts";
+
+body {
+  font-family: map.get(var.$font-families, "font-family"), sans-serif;
+  // font-family: "#{var.$font-families["font-family"]}";
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
