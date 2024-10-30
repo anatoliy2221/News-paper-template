@@ -1,0 +1,38 @@
+.page-title {
+  background-image: url("./img/banner.jpg");
+  width: 771px;
+  margin-bottom: 25px;
+  padding: 16px 28px 12px 26px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 219px 180px;
+  justify-content: space-between;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 151%;
+  color: #fff;
+}
+
+.title-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 151%;
+  color: #f65050;
+}
+
+.title-link {
+  width: 180px;
+  height: 44px;
+  background-color: #f65050;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  align-content: center;
+}
+
+.is-active {
+  background-color: #f65050;
+}
