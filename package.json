@@ -10,7 +10,8 @@
     "watch": "npx vite build --watch"
   },
   "devDependencies": {
-    "vite": "^5.4.8"
+    "vite": "^5.4.8",
+    "vite-plugin-image-optimizer": "^1.1.8"
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
@@ -20,7 +21,6 @@
     "postcss-sort-media-queries": "^5.2.0",
     "sass": "^1.80.5",
     "sharp": "^0.33.5",
-    "svgo": "^3.3.2",
-    "vite-plugin-image-optimizer": "^1.1.8"
+    "svgo": "^3.3.2"
   }
 }
