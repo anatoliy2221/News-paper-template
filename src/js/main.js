@@ -45,8 +45,6 @@ updateWeather();
 
 const linkEl = document.querySelector(".nav-list");
 
-console.log(linkEl);
-
 linkEl.addEventListener("click", function (event) {
     const selectedLink = event.target;
     selectedLink.classList.toggle("is-active");
