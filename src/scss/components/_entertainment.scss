@@ -1,0 +1,29 @@
+.entertainment {
+  margin-bottom: 50px;
+}
+
+.entertainment-header {
+  border-bottom: 1px solid #393939;
+}
+
+.entertainment-title {
+  font-weight: 500;
+  font-size: 24px;
+  color: #f65050;
+}
+
+.wrap {
+  position: relative;
+}
+
+.entertainment-btn {
+  display: inline-block;
+  background-color: #f65050;
+  stroke-width: 1px;
+  fill: #ffffff;
+}
+
+.entertainment-post-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
