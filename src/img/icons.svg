@@ -36,5 +36,9 @@
 <symbol id="icon-vector-right" viewBox="0 0 19 32">
 <path d="M19.2 16l-13.578 13.578-4.525-4.528 9.053-9.050-9.053-9.050 4.525-4.528 13.578 13.578z"></path>
 </symbol>
+<symbol id="icon-Video-Icon" viewBox="0 0 32 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.9143" d="M31.543 16c0 8.584-6.959 15.543-15.543 15.543s-15.543-6.959-15.543-15.543c0-8.584 6.959-15.543 15.543-15.543s15.543 6.959 15.543 15.543z"></path>
+<path d="M21.943 16l-8.914 5.147v-10.293l8.914 5.147z"></path>
+</symbol> 
 </defs>
 </svg>

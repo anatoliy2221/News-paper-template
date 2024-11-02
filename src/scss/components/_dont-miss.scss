@@ -18,15 +18,15 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-.dont-miss-articles-item:first-child {
-  grid-column: 1 / 2;
-  grid-row: 1 / 6;
-}
-
 .dont-miss-articles-item {
   display: grid;
   gap: 19px;
   grid-template-columns: 90px 1fr;
+}
+
+.dont-miss-articles-item:first-child {
+  grid-column: 1 / 2;
+  grid-row: 1 / 6;
 }
 
 .dont-miss-nav-list {
@@ -38,6 +38,9 @@
   font-weight: 500;
   font-size: 24px;
   color: #f65050;
+}
+
+.articles-wrap {
 }
 
 .dont-miss-sidebar-menu {

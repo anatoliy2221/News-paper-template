@@ -183,15 +183,17 @@
           <ul class="dont-miss-articles-list">
             <li class="dont-miss-articles-item">
               <img src="/src/img/dont-miss-1.jpg" alt="" />
-              <p>Craig Bator - 27 Dec 2020</p>
-              <h2>
-                Now Is the Time to Think About Your Small Business Success
-              </h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Faucibus lobortis augue condimentum maecenas. Metus at in
-                fames vitae posuere ut vel vulputate....
-              </p>
+              <div class="wrapper">
+                <p>Craig Bator - 27 Dec 2020</p>
+                <h2>
+                  Now Is the Time to Think About Your Small Business Success
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Faucibus lobortis augue condimentum maecenas. Metus at in
+                  fames vitae posuere ut vel vulputate....
+                </p>
+              </div>
             </li>
             <li class="dont-miss-articles-item">
               <img src="/src/img/dont-miss-2.jpg" class="section-img" alt="" />
@@ -290,84 +292,95 @@
       <section class="entertainment">
         <div class="entertainment-header">
           <h2 class="entertainment-title">Entertainment</h2>
-          <svg class="entertainment-btn" width="24" height="24">
-            <use href="/src/img/icons.svg#icon-Left-Button"></use>
-          </svg>
-          <svg class="entertainment-btn" width="24" height="24">
-            <use href="/src/img/icons.svg#icon-Right-Button"></use>
-          </svg>
-        </div>
-
-        <div class="wrap">
-          <img src="/src/img/Entertainment-main.jpg" />
-          <div class="overlay">
-            <h2 class="">
-              Amanda Seyfried became ‘really obsessed’ with ghost stories
-            </h2>
-            <p>
-              Hollywood actress Amanda Seyfried has recalled the time when she
-              became obsessed with ghost stories
-            </p>
+          <div class="entertainment-pagination">
+            <svg class="entertainment-btn" width="24" height="24">
+              <use href="/src/img/icons.svg#icon-Left-Button"></use>
+            </svg>
+            <svg class="entertainment-btn" width="24" height="24">
+              <use href="/src/img/icons.svg#icon-Right-Button"></use>
+            </svg>
           </div>
         </div>
+        <img src="/src/img/Entertainment-main.jpg" />
+        <div class="overlay">
+          <h2 class="">
+            Amanda Seyfried became ‘really obsessed’ with ghost stories
+          </h2>
+          <p>
+            Hollywood actress Amanda Seyfried has recalled the time when she
+            became obsessed with ghost stories
+          </p>
+        </div>
+
         <ul class="entertainment-post-list">
-          <li>
+          <li class="entertainment-post-item">
             <img src="/src/img/Entertainment-1.jpg" />
-            <p>Craig Bator - 27 Dec 2020</p>
-            <h3>
-              Amanda Seyfried became ‘really obsessed’ with ghost stories
-            </h3>
+            <div class="wrapper">
+              <p>Craig Bator - 27 Dec 2020</p>
+              <h3>
+                Amanda Seyfried became ‘really obsessed’ with ghost stories
+              </h3>
+            </div>
           </li>
-          <li>
+          <li class="entertainment-post-item">
             <img src="/src/img/Entertainment-2.jpg" />
-            <p>Craig Bator - 27 Dec 2020</p>
-            <h3>
-              Irrfan Khan’s Last film “ The Song of Scorpions” to release in
-              2021
-            </h3>
+            <div class="wrapper">
+              <p>Craig Bator - 27 Dec 2020</p>
+              <h3>
+                Irrfan Khan’s Last film “ The Song of Scorpions” to release in
+                2021
+              </h3>
+            </div>
           </li>
-          <li>
+          <li class="entertainment-post-item">
             <img src="/src/img/Entertainment-3.jpg" />
-            <p>Craig Bator - 27 Dec 2020</p>
-            <h3>Apee Karim blessed with a daughter</h3>
+            <div class="wrapper">
+              <p>Craig Bator - 27 Dec 2020</p>
+              <h3>Apee Karim blessed with a daughter</h3>
+            </div>
           </li>
         </ul>
       </section>
       <section class="sports">
-        <h2 class="sports-title">Sports</h2>
-        <ul class="sports-header-list">
-          <li class="sports-header-item">
-            <a href="#" class="sports-header-link">All</a>
-          </li>
-          <li class="sports-header-item">
-            <a href="#" class="sports-header-link">Football</a>
-          </li>
-          <li class="sports-header-item">
-            <a href="#" class="sports-header-link">Cricket</a>
-          </li>
-          <li class="sports-header-item">
-            <a href="#" class="sports-header-link">Basketball</a>
-          </li>
-          <li class="sports-header-item">
-            <a href="#" class="sports-header-link">Badminton</a>
-          </li>
-          <li class="sports-header-item">
-            <a href="#" class="sports-header-link">Boxing</a>
-          </li>
-          <li class="sports-header-item">
-            <a href="#" class="sports-header-link">Esports</a>
-          </li>
-        </ul>
-        <svg class="entertainment-btn" width="24" height="24">
-          <use href="/src/img/icons.svg#icon-Left-Button"></use>
-        </svg>
-        <svg class="entertainment-btn" width="24" height="24">
-          <use href="/src/img/icons.svg#icon-Right-Button"></use>
-        </svg>
-        <ul>
-          <li>
-            <a>
+        <div class="sports-header">
+          <h2 class="sports-title">Sports</h2>
+          <ul class="sports-header-list">
+            <li class="sports-header-item">
+              <a href="#" class="sports-header-link">All</a>
+            </li>
+            <li class="sports-header-item">
+              <a href="#" class="sports-header-link">Football</a>
+            </li>
+            <li class="sports-header-item">
+              <a href="#" class="sports-header-link">Cricket</a>
+            </li>
+            <li class="sports-header-item">
+              <a href="#" class="sports-header-link">Basketball</a>
+            </li>
+            <li class="sports-header-item">
+              <a href="#" class="sports-header-link">Badminton</a>
+            </li>
+            <li class="sports-header-item">
+              <a href="#" class="sports-header-link">Boxing</a>
+            </li>
+            <li class="sports-header-item">
+              <a href="#" class="sports-header-link">Esports</a>
+            </li>
+          </ul>
+          <div class="sports-header-pagination">
+            <svg class="entertainment-btn" width="24" height="24">
+              <use href="/src/img/icons.svg#icon-Left-Button"></use>
+            </svg>
+            <svg class="entertainment-btn" width="24" height="24">
+              <use href="/src/img/icons.svg#icon-Right-Button"></use>
+            </svg>
+          </div>
+        </div>
+        <ul class="sports-post">
+          <li class="sports-post-item">
+            <a href="" class="sports-post-link">
               <img src="./src/img/sports-1.jpg" alt="" />
+
               <p>Craig Bator - 27 Dec 2020</p>
               <h2>
                 Solskjaer dismisses Klopp comments on Man Utd penalty record
@@ -377,41 +390,52 @@
                 Faucibus lobortis augue condimentum maecenas. Metus at in
                 fames vitae posuere ut vel vulputate ...
               </p>
+
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="sports-post-item">
+            <a href="" class="sports-post-link">
               <img src="/src/img/sports-2.jpg" alt="" />
-              <p>Craig Bator - 27 Dec 2020</p>
-              <h2>South Africa hammer injury-hit Sri Lanka Player</h2>
+              <div class="wrapper">
+                <p>Craig Bator - 27 Dec 2020</p>
+                <h2>South Africa hammer injury-hit Sri Lanka Player</h2>
+              </div>
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="sports-post-item">
+            <a href="" class="sports-post-link">
               <img src="/src/img/sports-3.jpg" alt="" />
-              <p>Craig Bator - 27 Dec 2020</p>
-              <h2>Southee-lead New Zealand have Pakistan on the ropes</h2>
+              <div class="wrapper">
+                <p>Craig Bator - 27 Dec 2020</p>
+                <h2>Southee-lead New Zealand have Pakistan on the ropes</h2>
+              </div>
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="sports-post-item">
+            <a href="" class="sports-post-link">
               <img src="/src/img/sports-4.jpg" alt="" />
-              <p>Craig Bator - 27 Dec 2020</p>
-              <h2>The only thing that overcomes hard luck is hard work</h2>
+              <div class="wrapper">
+                <p>Craig Bator - 27 Dec 2020</p>
+                <h2>The only thing that overcomes hard luck is hard work</h2>
+              </div>
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="sports-post-item">
+            <a href="" class="sports-post-link">
               <img src="/src/img/sports-5.jpg" alt="" />
-              <p>Craig Bator - 27 Dec 2020</p>
-              <h2>Success is not a good teacher failure makes you humble</h2>
+              <div class="wrapper">
+                <p>Craig Bator - 27 Dec 2020</p>
+                <h2>Success is not a good teacher failure makes you humble</h2>
+              </div>
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="sports-post-item">
+            <a href="" class="sports-post-link">
               <img src="/src/img/sports-6.jpg" alt="" />
-              <p>Craig Bator - 27 Dec 2020</p>
-              <h2>Rahane-led India bury ghosts of Adelaide at Melbourne</h2>
+              <div class="wrapper">
+                <p>Craig Bator - 27 Dec 2020</p>
+                <h2>Rahane-led India bury ghosts of Adelaide at Melbourne</h2>
+              </div>
             </a>
           </li>
         </ul>
@@ -508,21 +532,25 @@
         </aside>
       </section>
       <section class="life-style">
-        <h2>Life Style</h2>
-        <ul>
-          <li><a href="">All</a></li>
-          <li><a href="">Travel</a></li>
-          <li><a href="">Recipes</a></li>
-          <li><a href="">Health & Fitness</a></li>
-          <li><a href="">Music</a></li>
-        </ul>
-        <svg class="entertainment-btn" width="24" height="24">
-          <use href="/src/img/icons.svg#icon-Left-Button"></use>
-        </svg>
-        <svg class="entertainment-btn" width="24" height="24">
-          <use href="/src/img/icons.svg#icon-Right-Button"></use>
-        </svg>
-        <ul>
+        <div class="life-style-header">
+          <h2 class="life-style-title">Life Style</h2>
+          <ul class="life-style-menu-list">
+            <li class="life-style-menu-item"><a class="life-style-menu-link" href="">All</a></li>
+            <li class="life-style-menu-item"><a class="life-style-menu-link" href="">Travel</a></li>
+            <li class="life-style-menu-item"><a class="life-style-menu-link" href="">Recipes</a></li>
+            <li class="life-style-menu-item"><a class="life-style-menu-link" href="">Health & Fitness</a></li>
+            <li class="life-style-menu-item"><a class="life-style-menu-link" href="">Music</a></li>
+          </ul>
+          <div class="life-style-menu-pagination">
+            <svg class="entertainment-btn" width="24" height="24">
+              <use href="/src/img/icons.svg#icon-Left-Button"></use>
+            </svg>
+            <svg class="entertainment-btn" width="24" height="24">
+              <use href="/src/img/icons.svg#icon-Right-Button"></use>
+            </svg>
+          </div>
+        </div>
+        <ul class="life-style-post-list">
           <li>
             <img src="/src/img/life-style-1.jpg" alt="">
             <p>Craig Bator - 27 Dec 2020</p>
@@ -542,7 +570,7 @@
             </p>
           </li>
         </ul>
-        <ul>
+        <ul class="life-style-articles">
           <li>
             <img src="/src/img/life-style-3.jpg" alt="">
             <p>Craig Bator - 27 Dec 2020</p>
@@ -569,8 +597,132 @@
           </li>
         </ul>
       </section>
+      <div class="page-title">
+        <div class="site-title-wrapper">
+          <h1 class="title">
+            Best Selling <span>BLOG</span> and <span>MAGAZINE</span> Theme
+            of All Time
+          </h1>
+          <p class="title-text">Experience the change!</p>
+        </div>
+        <a href="#" class="title-link">PURCHASE NOW</a>
+      </div>
+      <section class="video">
+        <h2 class="video-title">Video</h2>
+        <ul class="video-header-menu-list">
+          <li class="video-header-menu-item"><a href="" class="video-header-menu-link">All</a></li>
+          <li class="video-header-menu-item"><a href="" class="video-header-menu-link">Travel</a></li>
+          <li class="video-header-menu-item"><a href="" class="video-header-menu-link">Recipes</a></li>
+          <li class="video-header-menu-item"><a href="" class="video-header-menu-link">Health & Fitness</a></li>
+          <li class="video-header-menu-item"><a href="" class="video-header-menu-link">Music</a></li>
+        </ul>
+        <div class="video-header-menuu-pagination">
+          <svg class="entertainment-btn" width="24" height="24">
+            <use href="/src/img/icons.svg#icon-Left-Button"></use>
+          </svg>
+          <svg class="entertainment-btn" width="24" height="24">
+            <use href="/src/img/icons.svg#icon-Right-Button"></use>
+          </svg>
+        </div>
+        <ul>
+          <li>
+            <img src="/src/img/Video.jpg" alt="">
+            <p>Craig Bator - 27 Dec 2020</p>
+            <h2>Play This Game for Free on Epic Store
+              This Weekend</h2>
+          </li>
+          <li>
+            <img src="/src/img/Video-1.jpg" alt="">
+            <p>Craig Bator - 27 Dec 2020</p>
+            <h2>At Value-Focused Hotels, the Free Breakfast Gets Bigger</h2>
+          </li>
+          <li>
+            <img src="/src/img/Video-2.jpg" alt="">
+            <p>Craig Bator - 27 Dec 2020</p>
+            <h2>Failure is the condiment that gives success its flavor</h2>
+          </li>
+          <li>
+            <img src="/src/img/Video-3.jpg" alt="">
+            <p>Craig Bator - 27 Dec 2020</p>
+            <h2>Les nouveaux maillots du Real Madrid pour la saison</h2>
+          </li>
+        </ul>
+      </section>
+
     </div>
   </main>
+  <footer class="footer">
+    <ul>
+      <li><img src="/src/img/footer-1.jpg" alt=""></li>
+      <li><img src="/src/img/footer-2.jpg" alt=""></li>
+      <li><img src="/src/img/footer-3.jpg" alt=""></li>
+      <li><img src="/src/img/footer-4.jpg" alt=""></li>
+      <li><img src="/src/img/footer-5.jpg" alt=""></li>
+    </ul>
+    <a href="/" class="logo">
+      <img src="/src/img/Logo.png" alt="logo newacast" />
+    </a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, pellentesque dictum posuere id diam rutrum.</p>
+    <ul class="header-soc">
+      <li class="header-soc-item">
+        <a href="" class="header-soc-link" target="_blank">
+          <svg class="header-soc-icon" width="24" height="24">
+            <use href="/src/img/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-soc-item">
+        <a href="" class="header-soc-link" target="_blank">
+          <svg class="header-soc-icon" width="24" height="24">
+            <use href="/src/img/icons.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-soc-item">
+        <a href="" class="header-soc-link" target="_blank">
+          <svg class="header-soc-icon" width="24" height="24">
+            <use href="/src/img/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-soc-item">
+        <a href="" class="header-soc-link" target="_blank">
+          <svg class="header-soc-icon" width="24" height="24">
+            <use href="/src/img/icons.svg#icon-youtoube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <h2>Photo gallery</h2>
+    <ul class="footer-gallery-list">
+      <li class="footer-gallery-item"><img src="/src/img/footer-6.jpg"></li>
+      <li class="footer-gallery-item"><img src="/src/img/footer-7.jpg"></li>
+      <li class="footer-gallery-item"><img src="/src/img/footer-8.jpg"></li>
+      <li class="footer-gallery-item"><img src="/src/img/footer-9.jpg"></li>
+      <li class="footer-gallery-item"><img src="/src/img/footer-10.jpg"></li>
+      <li class="footer-gallery-item"><img src="/src/img/footer-11.jpg"></li>
+    </ul>
+    <h2>Tags</h2>
+    <ul class="footer-tags-list">
+      <li class="footer-tags-item"><a href="#" class="footer-tags-link">Football</a></li>
+      <li class="footer-tags-item"><a href="#" class="footer-tags-link"></a>Cricket</li>
+      <li class="footer-tags-item"><a href="#" class="footer-tags-link"></a>Covid 19</li>
+      <li class="footer-tags-item"><a href="#" class="footer-tags-link"></a>Life Style</li>
+      <li class="footer-tags-item"><a href="#" class="footer-tags-link"></a>Tranding News</li>
+      <li class="footer-tags-item"><a href="#" class="footer-tags-link"></a>Technology</li>
+      <li class="footer-tags-item"><a href="#" class="footer-tags-link"></a>Travel</li>
+    </ul>
+    <h2>Stay In Touch</h2>
+    <p>To be updated with all the latest news, offers
+      and special annoucements.</p>
+    <form>
+      <input type="text" placeholder="Your email address">
+      <button type="submit">Subscribe</button>
+    </form>
+  </footer>
+
+
+
   <script type="module" src="/src/js/main.js"></script>
 </body>
 

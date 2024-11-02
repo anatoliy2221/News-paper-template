@@ -1,0 +1,20 @@
+.life-style-header {
+  display: flex;
+}
+
+.life-style-menu-list {
+  display: flex;
+  gap: 12px;
+}
+
+.life-style-post-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.life-style-articles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 23px;
+}
