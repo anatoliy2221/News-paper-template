@@ -446,15 +446,15 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.dont-miss-articles-item:first-child {
-  grid-column: 1/2;
-  grid-row: 1/6;
-}
-
 .dont-miss-articles-item {
   display: grid;
   gap: 19px;
   grid-template-columns: 90px 1fr;
+}
+
+.dont-miss-articles-item:first-child {
+  grid-column: 1/2;
+  grid-row: 1/6;
 }
 
 .dont-miss-nav-list {
@@ -530,7 +530,10 @@ body {
 }
 
 .entertainment-header {
+  display: flex;
+  justify-content: space-between;
   border-bottom: 1px solid #393939;
+  margin-bottom: 25px;
 }
 
 .entertainment-title {
@@ -539,8 +542,9 @@ body {
   color: #f65050;
 }
 
-.wrap {
-  position: relative;
+.entertainment-pagination {
+  display: flex;
+  gap: 10px;
 }
 
 .entertainment-btn {
@@ -555,7 +559,82 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.entertainment-post-item {
+  display: grid;
+  gap: 17px;
+  grid-template-columns: 130px 1fr;
+}
+
+.sports {
+  display: grid;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  grid-template-columns: 1fr 270px;
+  grid-template-rows: 36px 1fr;
+}
+
+.sports-header {
+  display: flex;
+}
+
 .sports-header-list {
   display: flex;
   gap: 12px;
+}
+
+.sports-header-pagination {
+  display: flex;
+  gap: 12px;
+}
+
+.sports-post {
+  display: grid;
+  grid-template-columns: 393px 1fr;
+  grid-column: 1/2;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.sports-sidebar {
+  grid-column: 2/3;
+}
+
+.sports-post-item {
+  display: grid;
+}
+
+.sports-post-item:first-child {
+  grid-row: 1/6;
+}
+
+.sports-post-link {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 14px 17px;
+}
+
+.sports-soc-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.life-style-header {
+  display: flex;
+}
+
+.life-style-menu-list {
+  display: flex;
+  gap: 12px;
+}
+
+.life-style-post-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.life-style-articles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 23px;
 }
