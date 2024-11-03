@@ -1,12 +1,14 @@
 .entertainment {
   margin-bottom: 50px;
-}
 
-.entertainment-header {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #393939;
-  margin-bottom: 25px;
+  position: relative;
+
+  .entertainment-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #393939;
+    margin-bottom: 25px;
+  }
 }
 
 .entertainment-title {
@@ -29,11 +31,13 @@
 
 .entertainment-post-list {
   display: grid;
+  row-gap: 25px;
   grid-template-columns: repeat(3, 1fr);
 }
 
 .entertainment-post-item {
-  display: grid;
-  gap: 17px;
-  grid-template-columns: 130px 1fr;
+}
+
+.entertainment-post-item:first-child {
+  grid-column: 1 / 4;
 }

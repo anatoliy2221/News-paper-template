@@ -10,6 +10,7 @@
 .life-style-post-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  width: 870px;
   gap: 30px;
 }
 

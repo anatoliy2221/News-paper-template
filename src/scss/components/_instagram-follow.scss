@@ -1,0 +1,5 @@
+.instagram-follow-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-auto-flow: column;
+}

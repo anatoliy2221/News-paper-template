@@ -1,0 +1,127 @@
+.footer {
+  background-color: #393939;
+}
+
+.footer-container {
+  padding-top: 44px;
+  padding-bottom: 82px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.footer-final {
+  display: grid;
+  gap: 31px;
+}
+
+.footer-logo-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.48;
+  color: #fff;
+}
+
+.footer-gallery-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.01;
+  text-transform: capitalize;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 13px;
+}
+
+.footer-tags-title {
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 24px;
+}
+
+.footer-tags-list {
+  display: flex;
+  justify-content: stretch;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer-tags-item {
+  height: 24px;
+  align-content: center;
+}
+
+.footer-tags-item:nth-child(1) {
+  background-color: #f65050;
+}
+
+.footer-tags-item:nth-child(2) {
+  background-color: #0088ff;
+}
+
+.footer-tags-item:nth-child(3) {
+  background-color: #a56cbd;
+}
+
+.footer-tags-item:nth-child(4) {
+  background-color: #997c00;
+}
+
+.footer-tags-item:nth-child(5) {
+  background-color: #ffb8b8;
+}
+
+.footer-tags-item:nth-child(6) {
+  background-color: #49cfe8;
+}
+
+.footer-tags-item:nth-child(7) {
+  background-color: #4281ff;
+}
+
+.footer-gallery-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-form-title {
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.footer-form-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.49;
+  color: #fff;
+}
+
+.footer-form-input {
+  width: 270px;
+  height: 40px;
+  background-color: #fff;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.64;
+  color: #c4c4c4;
+}
+
+.footer-form-btn {
+  width: 270px;
+  height: 40px;
+  background-color: #f65050;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.64;
+  color: #fff;
+  text-align: center;
+}

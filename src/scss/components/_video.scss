@@ -1,0 +1,41 @@
+.video {
+  margin-bottom: 50px;
+}
+
+.video-header {
+  display: flex;
+}
+
+.video-header-menu-list {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.video-title {
+  font-weight: 500;
+  font-size: 24px;
+  color: #f65050;
+}
+
+.video-content-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 870px;
+  column-gap: 30px;
+  row-gap: 25px;
+}
+
+.video-content-item {
+  position: relative;
+}
+
+.video-content-item:first-child {
+  grid-column: 1 / 4;
+  h2 {
+    font-weight: 500;
+    font-size: 36px;
+    width: 528px;
+    color: #fff;
+  }
+}
